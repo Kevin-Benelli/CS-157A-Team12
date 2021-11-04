@@ -26,7 +26,7 @@
     <% 
      	String db = "FairComp"; 
       String user = "root";
-      String password = "FluxIntegral!1"; 
+      String password = ""; 
         
       try {   
           java.sql.Connection con; 
