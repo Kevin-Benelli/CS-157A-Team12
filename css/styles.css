@@ -1,0 +1,33 @@
+/* CSS Reset Default M/P */
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title{
+    /* margin-top: 10vh; */
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-ser;
+    font-style: italic;
+    font-size: 10vh;
+    padding-bottom: 3vh;
+}
+
+.headerLineBreak{
+    text-align: center;
+    opacity: .8;
+    margin-bottom: 5%;
+}
+
+.sqlData{
+   text-align: center;
+}
+.subHeader{
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.table_align{
+    text-align: -webkit-center;
+}
