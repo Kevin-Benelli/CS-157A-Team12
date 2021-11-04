@@ -26,7 +26,7 @@
     <% 
      	String db = "FairComp"; 
       String user = "root";
-      String password = ""; 
+      String password = "FluxIntegral!1"; 
         
       try {   
           java.sql.Connection con; 
@@ -50,7 +50,7 @@
           }*/
           while(rs.next()){
             out.println(
-              "<b>Job Title:</b> " + rs.getString(1) + " "
+              "<b>Job Title:</b> <a href=top_companies>" + rs.getString(1) + "</a> "
               + "<b>Location:</b> " + rs.getString(2) + " "    
               + "<b>Base Hour Rate:</b> $" + rs.getInt(3) + " "  
               + "<b>Sign On Bonus:</b> $" + rs.getInt(4) + " "  
