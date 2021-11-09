@@ -6,8 +6,8 @@
 </head>
 <body>
 
-  	<form action="" method="get">		
-		<h1 class="title">FairComp</h1>
+<!--   	<form action="" method="get">		
+ -->		<h1 class="title">FairComp</h1>
 		<hr class="headerLineBreak" />
 		<h2 class="subHeader">Add a Compensation</h2><br />
 		<p>Company Information:</p><br /> 
@@ -21,26 +21,27 @@
 		<br /> <input type="text" id="OP" placeholder="Other Pay(yearly)" />
 			<span id = "inputs" ></span><br />
 		<br /> <br /> <br />
-		<button onclick="addNewComp2DB(); submissionConfirmationPage()">Submit My Compensation</button>
- 	</form> 
- 	<!-- addNewComp2DB(); submissionConfirmationPage() --> 
+		<button onclick="submissionConfirmationPage()">Submit My Compensation</button>
+<!--  	</form> 
+ --> 	<!-- addNewComp2DB(); submissionConfirmationPage() --> 
 
 
-<script>
+  <script>
 
  	//Find out user's input info
-  	int cid = document.getElementById("compID").value;
- 	 //out.println("cid is: "+cid);
+/*   	int cid = document.getElementById("compID").value;
+ 	out.println("cid is: "+cid);
   	int jid = document.getElementById("jobID").value;
   	var sl = document.getElementById("stateLoc").value;
   	int bs = document.getElementById("BS").value;
   	int sob = document.getElementById("SOB").value;
   	int ab = document.getElementById("AB").value;
-  	int op = document.getElementById("OP").value; 
+  	int op = document.getElementById("OP").value;  */
+  	
   	 	
-	function addNewComp2DB(){
+ 	/* function addNewComp2DB(){
      	String db = "cs157aprojectteam12"; 
-	    var maxUserID; 
+	    int maxUserID; 
 	     
 
  		try {   
@@ -52,7 +53,7 @@
     		Statement stmt = con.createStatement();
     
     		//Find MaxUserID#
-      		 ResultSet rs = stmt.executeQuery("SELECT MAX(userID) AS 'MaxUserID' FROM UserCompensation"); 
+      		 ResultSet rs = stmt.executeQuery("SELECT MAX(userID) AS MaxUserID FROM UserCompensation"); 
      		while(rs.next()){
     	 		maxUserID = rs.getInt(1) + 1;
      		} 	
@@ -66,11 +67,11 @@
 		} catch(SQLException e) { 
     		out.println("SQLException caught: " + e.getMessage()); 
 			} 
-	}
+	}  */
+	 
  	function submissionConfirmationPage(){
 		window.location.href='/project1/submissionConfirmationPage.jsp';
 	}
 </script>
-
 </body>
 </html>
