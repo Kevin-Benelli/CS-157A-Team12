@@ -23,7 +23,7 @@
    
   </body>
   <footer>
-  <button onclick="window.location.href='/project1/FairCompTeam12.jsp'"> Return to Home Page</button>
+  <button onclick="window.location.href='/project1/home-page.jsp'"> Return to Home Page</button>
 
   
   </footer>

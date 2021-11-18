@@ -69,6 +69,6 @@
 
   </body>
   <footer>
-  <button type="button" onclick="window.location.href='FairComp.jsp'">Homepage</button> 
+  <button type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
   </footer>
 </html>
