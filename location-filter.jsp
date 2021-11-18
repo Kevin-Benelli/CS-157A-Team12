@@ -8,7 +8,7 @@
   </head>
     
   <body>
-    <h1 class="title">FairComp Search Page</h1>
+    <h1 class="title">FairComp State Filter Page</h1>
     <hr class="headerLineBreak" />
 
       <!-- <tr class = "table_align">
@@ -19,13 +19,13 @@
         <td>nurseSignOnBonus</td>
    </tr> -->
    
-   <div class = "searchCompanyInput"> 
+   <div class = "filterStateInput"> 
    		<form action="" method="get">
-   			<input type="text" class="form-control" name="q" placeholder="Search company name..."/>
+   			<input type="text" class="form-control" name="q" placeholder="Enter State abbreviation..."/>
    		</form>
    </div>
 	
-   <div class = "searchCompany"> 
+   <div class = "filterLocation"> 
     <% 
       String database = "FairComp"; 
       String username = "root";
@@ -42,7 +42,7 @@
           String data;
           if(query!=null)
           {
-        	  data = "SELECT company_name, location, base_salary, sign_on_bonus, annual_bonus, other_pay FROM CompanyCompensation, CompanyInfo WHERE CompanyCompensation.CompanyID = CompanyInfo.CompanyID AND company_name LIKE '%"+query+"%'";
+        	  data = "SELECT company_name, location, base_salary, sign_on_bonus, annual_bonus, other_pay FROM CompanyCompensation, CompanyInfo WHERE CompanyCompensation.CompanyID = CompanyInfo.CompanyID AND location LIKE '"+query+"'";
         	  ResultSet rsSearch = searchStat.executeQuery(data);
               
               while(rsSearch.next()){
@@ -70,6 +70,6 @@
   </body>
   <footer>
   <button type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
-  <button type="button" onclick="window.location.href='location-filter.jsp'">Filter by State</button> 
+  <button type="button" onclick="window.location.href='search-page.jsp'">Search by Company Name</button> 
   </footer>
 </html>
