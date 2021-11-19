@@ -7,7 +7,7 @@ The following **required** functionality is completed:
 
 - [X] User can search and filter companies by company name or state location. 
 - [X] User can find the financial information. 
-- [X] User can add their own financial information into the database(Partially complete). 
+- [X] User can add their own financial information into the database(Partially completed). 
 
 
 
