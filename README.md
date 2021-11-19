@@ -1,5 +1,14 @@
 # CS-157A-Team12
 
+FairComp is a web app that for users to compare the wages offered at a specific hospital to another hospital.
+
+
+The following **required** functionality is completed:
+
+- [X] User can search and filter companies by company name or state location. 
+- [X] User can find the financial information. 
+- [X] User can add their own financial information into the database(Partially complete). 
+
 
 
 ## Home Page
