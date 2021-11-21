@@ -43,7 +43,7 @@
 					<td><input type="text" name="otherPay" /></td>
 				</tr>
 			</table>
-			
+			<button type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
 			<input type = "submit" value = "Submit" />
 		</form>
 	</div>
