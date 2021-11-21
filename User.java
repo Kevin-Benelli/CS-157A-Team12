@@ -1,4 +1,4 @@
-package net.javaguides.registration.model;
+//package net.javaguides.registration.model;
 
 public class User {
 
