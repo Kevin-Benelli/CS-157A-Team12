@@ -8,7 +8,7 @@ The following **required** functionality is completed:
 - [X] User can view the top 5 most popular companies in home page.
 - [X] User can search and filter companies by company name and location. 
 - [X] User can find financial information for different level of Nurse positions. 
-- [X] User can add their own financial information into the database(Partially completed). 
+- [X] User can add new financial information into the database. 
 
 
 
