@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 <img width="1315" alt="Screen Shot 2021-11-18 at 11 23 00 PM" src="https://user-images.githubusercontent.com/60586550/142583850-a597a030-896e-4820-8701-4815a082d144.png">
 
 ## Web App Walkthrough GIF of Home Page and Home Page Buttons
-<img src="http://g.recordit.co/zl1YcG4Zzg.gif" width=250><br>
+<img src="http://g.recordit.co/zl1YcG4Zzg.gif" width=550><br>
 http://g.recordit.co/zl1YcG4Zzg.gif
 
 
@@ -24,18 +24,18 @@ http://g.recordit.co/zl1YcG4Zzg.gif
 <img width="1082" alt="Screen Shot 2021-11-18 at 11 23 30 PM" src="https://user-images.githubusercontent.com/60586550/142584195-982f7a7b-e49f-47d6-9a6b-b8b03ac224ca.png">
 
 ## Web App Walkthrough GIF of Search Page Filter by Company Name
-<img src="http://g.recordit.co/QbG8vlHPIV.gif" width=250><br>
+<img src="http://g.recordit.co/QbG8vlHPIV.gif" width=550><br>
 http://g.recordit.co/QbG8vlHPIV.gif
 
 ## Web App Walkthrough GIF of Search Page Filter by Location
-<img src="http://g.recordit.co/vtx7at8JIL.gif" width=250><br>
+<img src="http://g.recordit.co/vtx7at8JIL.gif" width=550><br>
 http://g.recordit.co/vtx7at8JIL.gif
 
 ## Add Compensation Page Screenshot
 <img width="426" alt="Screen Shot 2021-11-18 at 11 34 10 PM" src="https://user-images.githubusercontent.com/60586550/142584305-3f9970d7-1f7d-4d53-ac97-164202160019.png">
 
 ## Web App Walkthrough GIF of Adding a new Compensation to MySQL with a confirmation page at the end
-<img src="http://g.recordit.co/tc2uIxK1sb.gif" width=250><br>
+<img src="http://g.recordit.co/tc2uIxK1sb.gif" width=550><br>
 http://g.recordit.co/tc2uIxK1sb.gif
 
 
