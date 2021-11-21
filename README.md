@@ -38,6 +38,9 @@ http://g.recordit.co/vtx7at8JIL.gif
 <img src="http://g.recordit.co/tc2uIxK1sb.gif" width=550><br>
 http://g.recordit.co/tc2uIxK1sb.gif
 
+## Web App Walkthrough GIF Refresh MySQL and the New Added Compensation is Inserted
+<img src="http://g.recordit.co/AFkXDkvGSw.gif" width=550><br>
+http://g.recordit.co/AFkXDkvGSw.gif
 
 ## Post Submission Page Screenshot
 <img width="782" alt="Screen Shot 2021-11-18 at 11 34 18 PM" src="https://user-images.githubusercontent.com/60586550/142584318-b813e2cb-01d4-4104-99a1-9e598a1070c4.png">
