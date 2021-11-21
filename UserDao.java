@@ -1,4 +1,4 @@
-package net.javaguides.registration.dao;
+//package net.javaguides.registration.dao;
 //write JDBC code to connect MySQL'
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,7 +22,7 @@ public class UserDao {
 		Class.forName("com.mysql.jdbc.Driver");
 		String database = "cs157aprojectteam12";
 		String username = "root";
-		String pwd = "Dabi464404";
+		String pwd = "";
 
 		//connect MySQL
 		try{Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + database + "?autoReconnect=true&useSSL=false",username, pwd);
@@ -51,7 +51,7 @@ public class UserDao {
 		Class.forName("com.mysql.jdbc.Driver");
 		String database2 = "cs157aprojectteam12";
 		String username2 = "root";
-		String pwd2 = "Dabi464404";
+		String pwd2 = "";
 
 		//connect MySQL
 		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + database2 + "?autoReconnect=true&useSSL=false",
