@@ -1,6 +1,6 @@
 <%@ page import="java.sql.*"%>
 <html>
-  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <head>
     <title class="App-Header">FairComp Team 12</title>
     
@@ -23,7 +23,7 @@
    
   </body>
   <footer>
-  <button onclick="window.location.href='/project1/home-page.jsp'"> Return to Home Page</button>
+  <button onclick="window.location.href='home-page.jsp'"> Return to Home Page</button>
 
   
   </footer>
