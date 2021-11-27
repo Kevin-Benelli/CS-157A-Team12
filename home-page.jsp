@@ -11,15 +11,7 @@
     <h1 class="title">Welcome To FairComp</h1>
     <hr class="headerLineBreak" />
 
-      <!-- <tr class = "table_align">
-        <td>nursePositionTitle</td>
-        <td>nurseYearsOfExperience</td>
-        <td>nurseBaseSalary</td>
-        <td>nurseOvertime</td>
-        <td>nurseSignOnBonus</td>
-   </tr> -->
-
-   <h2 class="subHeader"> Top 5 Most Popular Companies </h2>
+   <h2 class="subHeader"> Top 5 Most Popular Companies </h2> <hr class="subheaderLineBreak"/><br />
 
    <div class = "sqlData"> 
     <% 
@@ -46,13 +38,14 @@
               + "<br/><br/>");
           }*/
           while(rs.next()){
+            String companyID = rs.getString(1);
             out.println(
-              "<b>Company Name:</b> <a href=top_companies>" + rs.getString(1) + "</a> "
-              + "<b>Location:</b> " + rs.getString(2) + " "    
+              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp?companyName=${ \" + companyID + \"}\"> " + companyID + "</a> "
+              + "<b> Location:</b> " + rs.getString(2) + " "    
               + "<b>Base Hour Rate:</b> $" + rs.getInt(3) + " "  
               + "<b>Sign On Bonus:</b> $" + rs.getInt(4) + " "  
               + "<b>Annual Bonus:</b> $" + rs.getInt(5) + " " 
-              + "<b>Other Pay:</b> $" + rs.getInt(6) + " "     
+              + "<b>Other Pay:</b> $" + rs.getInt(6) + " </div> </div>  "     
               + "<br/><br/>");
           }
           rs.close();
@@ -65,12 +58,12 @@
     </div>
     <br /><br />
 
-    <h2 class = "subHeader"> Top 10 User Compensation Entries Based on Total Annual Compensation</h2>
+    <h2 class = "subHeader"> Top 10 User Compensation Entries Based on Total Annual Compensation</h2> <hr class="subheaderLineBreak"/><br />
     <% 
     String db2 = "FairComp"; 
     String user2 = "root";
     String password2 = ""; 
-    String sqlQuery = "SELECT company_name, ((base_salary *52 * 40) + sign_on_bonus + annual_bonus + other_pay) AS 'total_annual_compensation', base_salary, base_salary, sign_on_bonus, annual_bonus, other_pay, location FROM CompanyCompensation, CompanyInfo WHERE CompanyCompensation.CompanyID = CompanyInfo.CompanyID ORDER BY total_annual_compensation DESC LIMIT 10;";
+    String sqlQuery = "SELECT company_name, ((base_salary *52 * 40) + sign_on_bonus + annual_bonus + other_pay) AS 'total_annual_compensation', base_salary, sign_on_bonus, annual_bonus, other_pay, location FROM CompanyCompensation, CompanyInfo WHERE CompanyCompensation.CompanyID = CompanyInfo.CompanyID ORDER BY total_annual_compensation DESC LIMIT 10;";
       try {   
           java.sql.Connection con2; 
           Class.forName("com.mysql.jdbc.Driver");
@@ -80,26 +73,21 @@
           
           ResultSet rs = stmt2.executeQuery(sqlQuery); 
 
-          /*while (rs.next()) {
-              out.println(rs.getString(1) + " " 
-              + rs.getInt(2) + " " 
-              + rs.getInt(3) + " " 
-              + rs.getInt(4) + " " 
-              + rs.getInt(5) + " " 
-              + rs.getInt(6) 
-              + "<br/><br/>");
-          }*/
+        
           while(rs.next()){
+            String companyID = rs.getString(1);
             out.println(
-              "<b>Company Name:</b> <a href=top_companies>" + rs.getString(1) + "</a> "
+              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp?companyName=${ \" + companyID + \"}\"> " + companyID + "</a> "
               + "<b>Total Annual Compensation:</b> " + rs.getInt(2) + " "    
               + "<b>Base Hourly Rate:</b> $" + rs.getInt(3) + " "  
               + "<b>Sign On Bonus:</b> $" + rs.getInt(4) + " "  
               + "<b>Annual Bonus:</b> $" + rs.getInt(5) + " " 
               + "<b>Other Pay:</b> $" + rs.getInt(6) + " "     
-              + "<b>Location:</b> $" + rs.getInt(6) + " "     
-              + "<br/><br/>");
+              + "<b>Location:</b> $" + rs.getInt(6) + " </div> </div>" 
+              + "<br/><br/>" );
+            
           }
+          
           rs.close();
           stmt2.close();
           con2.close();
@@ -107,10 +95,11 @@
           out.println("SQLException caught: " + e.getMessage()); 
       }
     %>
-    
+
   </body>
-  <footer>
-  <button type="button" onclick="window.location.href='search-page.jsp'">Search for a Company</button> 
-  <button onclick="window.location.href='/submit-page.jsp'"> Submit New Compensation Information </button> 
+  <footer class ="footer_style">
+  <button class="button_style" type="button" onclick="window.location.href='search-page.jsp'">Search for a Company</button> 
+  <button class ="button_style" onclick="window.location.href='submit-page.jsp'"> Submit New Compensation Information </button> 
+  
   </footer>
 </html>

@@ -10,14 +10,6 @@
   <body>
     <h1 class="title">FairComp Search Page</h1>
     <hr class="headerLineBreak" />
-
-      <!-- <tr class = "table_align">
-        <td>nursePositionTitle</td>
-        <td>nurseYearsOfExperience</td>
-        <td>nurseBaseSalary</td>
-        <td>nurseOvertime</td>
-        <td>nurseSignOnBonus</td>
-   </tr> -->
    
    <div class = "searchCompanyInput"> 
    		<form action="" method="get">
@@ -69,7 +61,7 @@
 
   </body>
   <footer>
-  <button type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
-  <button type="button" onclick="window.location.href='location-filter.jsp'">Filter by State</button> 
+  <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
+  <button class="button_style" type="button" onclick="window.location.href='location-filter.jsp'">Filter by State</button> 
   </footer>
 </html>
