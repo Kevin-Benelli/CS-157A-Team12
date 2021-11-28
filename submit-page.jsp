@@ -1,6 +1,6 @@
 <%@ page import="java.sql.*"%>
 <html>
-<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
 <head>
 <title class="App-Header">submit New Compensation</title><br />
 </head>
@@ -10,18 +10,19 @@
  -->		<h1 class="title">FairComp</h1>
 		<hr class="headerLineBreak" />
 		<h2 class="subHeader">Add a Compensation</h2><br />
-		<p>Company Information:</p><br /> 
+		<p class="form_title_style">Company Information:</p><br /> 
 		<br /> <input type="text" id="compID" placeholder="Company ID" /><br />
 		<br /> <input type="text" id="jobID" placeholder="Job ID" /><br /> 
 		<br /> <input type="text" id="stateLoc" placeholder="State Location of the office" /><br /> <br /><br />
-		<p>Compensation Information:</p><br /> 
+		<div class="form_title_style"><p>Compensation Information:</p><br /> </div>
+		
 		<br /> <input type="text" id="BS" placeholder="Base Salary(hourly)" /><br /> 
 		<br /> <input type="text" id="SOB" placeholder="Sign On Bonus(yearly)" /><br /> 
 		<br /> <input type="text" id="AB" placeholder="Annual Bonus(yearly)" /><br />
 		<br /> <input type="text" id="OP" placeholder="Other Pay(yearly)" />
 			<span id = "inputs" ></span><br />
 		<br /> <br /> <br />
-		<button onclick="submissionConfirmationPage()">Submit My Compensation</button>
+		<button class="button_style" onclick="submissionConfirmationPage()">Submit My Compensation</button>
 <!--  	</form> 
  --> 	<!-- addNewComp2DB(); submissionConfirmationPage() --> 
 
@@ -70,7 +71,7 @@
 	}  */
 	 
  	function submissionConfirmationPage(){
-		window.location.href='/project1/submissionConfirmationPage.jsp';
+		window.location.href='submissionConfirmationPage.jsp';
 	}
 </script>
 </body>
