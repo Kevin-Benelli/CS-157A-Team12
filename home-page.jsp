@@ -40,7 +40,7 @@
           while(rs.next()){
             String companyID = rs.getString(1);
             out.println(
-              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp?companyName=${ \" + companyID + \"}\"> " + companyID + "</a> "
+              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp> " + companyID + "</a> "
               + "<b> Location:</b> " + rs.getString(2) + " "    
               + "<b>Base Hour Rate:</b> $" + rs.getInt(3) + " "  
               + "<b>Sign On Bonus:</b> $" + rs.getInt(4) + " "  
@@ -77,7 +77,7 @@
           while(rs.next()){
             String companyID = rs.getString(1);
             out.println(
-              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp?companyName=${ \" + companyID + \"}\"> " + companyID + "</a> "
+              "<div class=\"row\"> <div class=\"row_inside\"> <b>Company Name: </b> <a href=search-page.jsp> " + companyID + "</a> "
               + "<b>Total Annual Compensation:</b> " + rs.getInt(2) + " "    
               + "<b>Base Hourly Rate:</b> $" + rs.getInt(3) + " "  
               + "<b>Sign On Bonus:</b> $" + rs.getInt(4) + " "  
