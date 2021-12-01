@@ -65,5 +65,6 @@
   <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
   <button class="button_style" type="button" onclick="window.location.href='search-page.jsp'">Search by Company Name</button> 
   <button class="button_style" type="button" onclick="window.location.href='job-name-filter.jsp'">Search by Job Name</button> 
+  <button class="button_style" type="button" onclick="window.location.href='job-level-filter.jsp'">Search by Job Name</button> 
   </footer>
 </html>
