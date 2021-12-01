@@ -63,5 +63,6 @@
   <footer>
   <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
   <button class="button_style" type="button" onclick="window.location.href='location-filter.jsp'">Filter by State</button> 
+  <button class="button_style" type="button" onclick="window.location.href='job-name-filter.jsp'">Search by Job Name</button> 
   </footer>
 </html>

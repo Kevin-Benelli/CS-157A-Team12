@@ -11,13 +11,6 @@
     <h1 class="title">FairComp State Filter Page</h1>
     <hr class="headerLineBreak" />
 
-      <!-- <tr class = "table_align">
-        <td>nursePositionTitle</td>
-        <td>nurseYearsOfExperience</td>
-        <td>nurseBaseSalary</td>
-        <td>nurseOvertime</td>
-        <td>nurseSignOnBonus</td>
-   </tr> -->
    
    <div class = "filterStateInput"> 
    		<form action="" method="get">
@@ -71,5 +64,6 @@
   <footer>
   <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
   <button class="button_style" type="button" onclick="window.location.href='search-page.jsp'">Search by Company Name</button> 
+  <button class="button_style" type="button" onclick="window.location.href='job-name-filter.jsp'">Search by Job Name</button> 
   </footer>
 </html>
