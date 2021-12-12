@@ -39,7 +39,7 @@
               
               while(rsSearch.next()){
             	  out.println(
-            	  "<b>Company Name:</b> <a href=top_companies>" + rsSearch.getString(1) + "</a> "
+            	  "<b>Company Name:</b> " + rsSearch.getString(1) + " "
             	  + "<b>Location:</b> " + rsSearch.getString(2) + " "    
             	  + "<b>Base Hour Rate:</b> $" + rsSearch.getInt(3) + " "  
             	  + "<b>Sign On Bonus:</b> $" + rsSearch.getInt(4) + " "  
@@ -62,8 +62,9 @@
   </body>
   <footer>
   <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
+  <button class="button_style" type="button" onclick="window.location.href='company-position.jsp'">View by Position Levels</button> 
   <button class="button_style" type="button" onclick="window.location.href='location-filter.jsp'">Filter by State</button> 
   <button class="button_style" type="button" onclick="window.location.href='job-name-filter.jsp'">Search by Job Name</button> 
-  <button class="button_style" type="button" onclick="window.location.href='job-level-filter.jsp'">Search by Job Name</button> 
+  <button class="button_style" type="button" onclick="window.location.href='job-level-filter.jsp'">Search by Job Level</button> 
   </footer>
 </html>
