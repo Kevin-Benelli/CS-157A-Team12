@@ -1,0 +1,85 @@
+/* CSS Reset Default M/P */
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+.title{
+    /* margin-top: 10vh; */
+    text-align: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-ser;
+    font-style: italic;
+    font-size: 10vh;
+    padding-bottom: 3vh;
+    background-color: darkcyan;
+    margin-top: 0;
+}
+
+.headerLineBreak{
+    text-align: center;
+    opacity: .8;
+    margin-bottom: 5%;
+}
+
+
+.subheaderLineBreak{
+    text-align: center;
+    opacity: .2;
+}
+
+.sqlData{
+   text-align: center;
+}
+.subHeader{
+    font-size:4vh;
+    text-align: center;
+    padding: 3vh;
+    border:solid;
+    background-color:cyan;
+}
+
+.table_align{
+    text-align: -webkit-center;
+}
+
+.row{
+    /* display:block; */
+    font-size: 3vh;
+    border-radius: 10em;
+    border-style: solid;
+    /* margin:5vh; */
+}
+
+.row_inside{
+    margin:4vh;
+    
+}
+
+
+.button_style{
+    height: 8vh;
+    margin: 5px;
+    width: 25vw;
+    border-radius: 3vh;
+    padding: 5px;
+    font-size: 18px;
+    background: cornflowerblue;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    
+}
+
+input{
+    width: 50%;
+    padding: 3vh 5vw;
+    margin: 1vh 0;
+    box-sizing: border-box;
+}
+
+
+.form_title_style{  
+    font-size: 5vh;
+}
