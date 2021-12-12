@@ -7,18 +7,17 @@
     <br />
   </head>
     
-  <body>
-    <h1 class="title">FairComp State Filter Page</h1>
+    <body>
+    <h1 class="title">Company Position Levels Page</h1>
     <hr class="headerLineBreak" />
-
    
-   <div class = "filterStateInput"> 
+   <div class = "companyInput"> 
    		<form action="" method="get">
-   			<input type="text" class="form-control" name="q" placeholder="Enter State abbreviation..."/>
+   			<input type="text" class="form-control" name="q" placeholder="Exact Company Name..."/>
    		</form>
    </div>
-	
-   <div class = "filterLocation"> 
+    
+   <div class = "companyPosition"> 
     <% 
       String database = "FairComp"; 
       String username = "root";
@@ -35,17 +34,18 @@
           String data;
           if(query!=null)
           {
-        	  data = "SELECT company_name, location, base_salary, sign_on_bonus, annual_bonus, other_pay FROM CompanyCompensation, CompanyInfo WHERE CompanyCompensation.CompanyID = CompanyInfo.CompanyID AND location LIKE '"+query+"'";
+        	  data = "SELECT company_name, job_level, job_name, UserCompensation.base_salary, sign_on_bonus, annual_bonus, other_pay FROM CompanyInfo, JobPositionCompensation, UserCompensation WHERE CompanyInfo.companyID = UserCompensation.companyID AND UserCompensation.jobID = JobPositionCompensation.jobID AND company_name LIKE '"+query+"' ORDER BY job_level DESC";
         	  ResultSet rsSearch = searchStat.executeQuery(data);
               
               while(rsSearch.next()){
             	  out.println(
-            	  "<b>Company Name:</b> <a href=top_companies>" + rsSearch.getString(1) + "</a> "
-            	  + "<b>Location:</b> " + rsSearch.getString(2) + " "    
-            	  + "<b>Base Hour Rate:</b> $" + rsSearch.getInt(3) + " "  
-            	  + "<b>Sign On Bonus:</b> $" + rsSearch.getInt(4) + " "  
-            	  + "<b>Annual Bonus:</b> $" + rsSearch.getInt(5) + " " 
-                  + "<b>Other Pay:</b> $" + rsSearch.getInt(6) + " "     
+            	  "<b>Company Name:</b> " + rsSearch.getString(1) + " "
+            	  + "<b>Job Level:</b> " + rsSearch.getString(2) + " "    
+            	  + "<b>Job Name:</b> " + rsSearch.getString(3) + " "  
+            	  + "<b>Base Salary:</b> $" + rsSearch.getInt(4) + " "  
+            	  + "<b>Sign On Bonus:</b> $" + rsSearch.getInt(5) + " " 
+                  + "<b>Annual Bonus:</b> $" + rsSearch.getInt(6) + " "    
+                  + "<b>Other Pay:</b> $" + rsSearch.getInt(7) + " " 
             	  + "<br/><br/>");
               }
               
@@ -63,8 +63,5 @@
   </body>
   <footer>
   <button class="button_style" type="button" onclick="window.location.href='home-page.jsp'">Homepage</button> 
-  <button class="button_style" type="button" onclick="window.location.href='search-page.jsp'">Search by Company Name</button> 
-  <button class="button_style" type="button" onclick="window.location.href='job-name-filter.jsp'">Search by Job Name</button> 
-  <button class="button_style" type="button" onclick="window.location.href='job-level-filter.jsp'">Search by Job Name</button> 
   </footer>
 </html>
